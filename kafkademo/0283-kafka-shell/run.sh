@@ -16,4 +16,4 @@ do
 done
 export CLASSPATH
 
-${JAVA_HOME}/bin/java -Xms1024m -Xmx2048m com.cloudera.nokerberos.ReadUserInfoFIleToKafka $read_file
+${JAVA_HOME}/bin/java -Xms1024m -Xmx2048m -Dfile.encoding=UTF-8 com.cloudera.nokerberos.ReadUserInfoFIleToKafka $read_file
